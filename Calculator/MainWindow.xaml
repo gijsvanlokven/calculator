@@ -1,0 +1,79 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="430" Width="280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!-- Number Buttons -->
+        <!-- Row 1 -->
+        <Button x:Name="btn7" Grid.Column="1" Grid.Row="2">7</Button>
+        <Button x:Name="btn8" Grid.Column="2" Grid.Row="2">8</Button>
+        <Button x:Name="btn9" Grid.Column="3" Grid.Row="2">9</Button>
+        <!-- Row 2 -->
+        <Button x:Name="btn4" Grid.Column="1" Grid.Row="3">4</Button>
+        <Button x:Name="btn5" Grid.Column="2" Grid.Row="3">5</Button>
+        <Button x:Name="btn6" Grid.Column="3" Grid.Row="3">6</Button>
+        <!-- Row 3 -->
+        <Button x:Name="btn1" Grid.Column="1" Grid.Row="4">1</Button>
+        <Button x:Name="btn2" Grid.Column="2" Grid.Row="4">2</Button>
+        <Button x:Name="btn3" Grid.Column="3" Grid.Row="4">3</Button>
+        <!-- Row 4 -->
+        <Button x:Name="btn0" Grid.Column="1" Grid.Row="5">0</Button>
+        <Button x:Name="btnState" Grid.Column="2" Grid.Row="5">+/-</Button>
+        <Button x:Name="btnFloat" Grid.Column="3" Grid.Row="5">.</Button>
+        
+        
+        <!-- Clear Buttons -->
+        <Button x:Name="btnBack" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">Back</Button>
+        <Button x:Name="btnCE" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2">CE</Button>
+        <Button x:Name="btnC" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2">C </Button>
+        
+        
+        <!-- Basic Operand Buttons -->
+        <Button x:Name="btnDivide" Grid.Column="4" Grid.Row="2">/</Button>
+        <Button x:Name="btnMultiply" Grid.Column="4" Grid.Row="3">*</Button>
+        <Button x:Name="btnSubtract" Grid.Column="4" Grid.Row="4">-</Button>
+        <Button x:Name="btnAdd" Grid.Column="4" Grid.Row="5">+</Button>
+        
+        
+        <!-- Advanced  Operand Buttons -->
+        <Button x:Name="btnSqrt" Grid.Column="5" Grid.Row="2">sqrt</Button>
+        <Button x:Name="btnPercent" Grid.Column="5" Grid.Row="3">%</Button>
+        <Button x:Name="btnFraction" Grid.Column="5" Grid.Row="4">1/x</Button>
+        <Button x:Name="btnEquals" Grid.Column="5" Grid.Row="5">=</Button>
+        
+        <!-- Memory Operands -->
+        <Button x:Name="btnMC" Grid.Column="0" Grid.Row="2">MC</Button>
+        <Button x:Name="btnMR" Grid.Column="0" Grid.Row="3">MR</Button>
+        <Button x:Name="btnMS" Grid.Column="0" Grid.Row="4">MS</Button>
+        <Button x:Name="btnMAdd" Grid.Column="0" Grid.Row="5">M+</Button>
+        
+        <!-- Displays -->
+        <TextBox x:Name="MainOutput" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7">Test</TextBox>
+        <TextBox x:Name="MemoryIndicator" Grid.Column="0" Grid.Row="1">M</TextBox>
+        
+        
+        
+    </Grid>
+</Window>
