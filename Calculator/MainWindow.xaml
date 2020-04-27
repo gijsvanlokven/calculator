@@ -27,41 +27,41 @@
         
         <!-- Number Buttons -->
         <!-- Row 1 -->
-        <Button x:Name="btn7" Grid.Column="1" Grid.Row="2">7</Button>
-        <Button x:Name="btn8" Grid.Column="2" Grid.Row="2">8</Button>
-        <Button x:Name="btn9" Grid.Column="3" Grid.Row="2">9</Button>
+        <Button x:Name="btn7" Grid.Column="1" Grid.Row="2" Click="btn7_Click">7</Button>
+        <Button x:Name="btn8" Grid.Column="2" Grid.Row="2" Click="btn8_Click">8</Button>
+        <Button x:Name="btn9" Grid.Column="3" Grid.Row="2" Click="btn9_Click">9</Button>
         <!-- Row 2 -->
-        <Button x:Name="btn4" Grid.Column="1" Grid.Row="3">4</Button>
-        <Button x:Name="btn5" Grid.Column="2" Grid.Row="3">5</Button>
-        <Button x:Name="btn6" Grid.Column="3" Grid.Row="3">6</Button>
+        <Button x:Name="btn4" Grid.Column="1" Grid.Row="3" Click="btn4_Click">4</Button>
+        <Button x:Name="btn5" Grid.Column="2" Grid.Row="3" Click="btn5_Click">5</Button>
+        <Button x:Name="btn6" Grid.Column="3" Grid.Row="3" Click="btn6_Click">6</Button>
         <!-- Row 3 -->
-        <Button x:Name="btn1" Grid.Column="1" Grid.Row="4">1</Button>
-        <Button x:Name="btn2" Grid.Column="2" Grid.Row="4">2</Button>
-        <Button x:Name="btn3" Grid.Column="3" Grid.Row="4">3</Button>
+        <Button x:Name="btn1" Grid.Column="1" Grid.Row="4" Click="btn1_Click">1</Button>
+        <Button x:Name="btn2" Grid.Column="2" Grid.Row="4" Click="btn2_Click">2</Button>
+        <Button x:Name="btn3" Grid.Column="3" Grid.Row="4" Click="btn3_Click">3</Button>
         <!-- Row 4 -->
-        <Button x:Name="btn0" Grid.Column="1" Grid.Row="5">0</Button>
+        <Button x:Name="btn0" Grid.Column="1" Grid.Row="5" Click="btn0_Click">0</Button>
         <Button x:Name="btnState" Grid.Column="2" Grid.Row="5">+/-</Button>
         <Button x:Name="btnFloat" Grid.Column="3" Grid.Row="5">.</Button>
         
         
         <!-- Clear Buttons -->
-        <Button x:Name="btnBack" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">Back</Button>
-        <Button x:Name="btnCE" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2">CE</Button>
-        <Button x:Name="btnC" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2">C </Button>
+        <Button x:Name="btnBack" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Click="btnBack_Click">Back</Button>
+        <Button x:Name="btnCE" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" Click="btnCE_Click">CE</Button>
+        <Button x:Name="btnC" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2" Click="btnC_Click">C </Button>
         
         
         <!-- Basic Operand Buttons -->
-        <Button x:Name="btnDivide" Grid.Column="4" Grid.Row="2">/</Button>
-        <Button x:Name="btnMultiply" Grid.Column="4" Grid.Row="3">*</Button>
-        <Button x:Name="btnSubtract" Grid.Column="4" Grid.Row="4">-</Button>
-        <Button x:Name="btnAdd" Grid.Column="4" Grid.Row="5">+</Button>
+        <Button x:Name="btnDivide" Grid.Column="4" Grid.Row="2" Click="btnDivide_Click">/</Button>
+        <Button x:Name="btnMultiply" Grid.Column="4" Grid.Row="3" Click="btnMultiply_Click">*</Button>
+        <Button x:Name="btnSubtract" Grid.Column="4" Grid.Row="4" Click="btnSubtract_Click">-</Button>
+        <Button x:Name="btnAdd" Grid.Column="4" Grid.Row="5" Click="btnAdd_Click">+</Button>
         
         
         <!-- Advanced  Operand Buttons -->
         <Button x:Name="btnSqrt" Grid.Column="5" Grid.Row="2">sqrt</Button>
         <Button x:Name="btnPercent" Grid.Column="5" Grid.Row="3">%</Button>
         <Button x:Name="btnFraction" Grid.Column="5" Grid.Row="4">1/x</Button>
-        <Button x:Name="btnEquals" Grid.Column="5" Grid.Row="5">=</Button>
+        <Button x:Name="btnEquals" Grid.Column="5" Grid.Row="5" Click="btnEquals_Click">=</Button>
         
         <!-- Memory Operands -->
         <Button x:Name="btnMC" Grid.Column="0" Grid.Row="2">MC</Button>
@@ -70,8 +70,8 @@
         <Button x:Name="btnMAdd" Grid.Column="0" Grid.Row="5">M+</Button>
         
         <!-- Displays -->
-        <TextBox x:Name="MainOutput" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7">Test</TextBox>
-        <TextBox x:Name="MemoryIndicator" Grid.Column="0" Grid.Row="1">M</TextBox>
+        <TextBox x:Name="MainOutput" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">Test</TextBox>
+        <TextBox x:Name="MemoryIndicator" Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">M</TextBox>
         
         
         
